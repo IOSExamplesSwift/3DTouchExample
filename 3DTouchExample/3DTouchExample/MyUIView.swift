@@ -42,7 +42,7 @@ class MyUIView: UIView {
     
     func handleTouch(_ touches:Set<UITouch>) {
         if let touch = touches.first {
-            size = touch.force + 100
+            size = touch.force * 100
             self.setNeedsDisplay()
         }
     }
